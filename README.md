@@ -32,7 +32,7 @@
 - анализаторы .NET, `.editorconfig`, `dotnet format` — предупреждения считаются ошибками
 - Visual Studio 2022
 
-Архитектура и примененные паттерны описаны в [docs/plan.md](docs/plan.md#6-устройство-программы), диаграмма классов — в [docs/class-diagram.md](docs/class-diagram.md), тест-кейсы — в [docs/test-cases.md](docs/test-cases.md).
+Архитектура и примененные паттерны описаны в [docs/plan.md](docs/plan.md#6-устройство-программы), диаграмма классов — в [docs/class-diagram.md](docs/class-diagram.md), тест-кейсы — в [docs/test-cases.md](docs/test-cases.md), скриншоты форм — в [docs/screenshots](docs/screenshots).
 
 ## Структура
 
