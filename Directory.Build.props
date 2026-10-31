@@ -1,0 +1,26 @@
+<Project>
+  <!-- Общие настройки для всех проектов решения. -->
+  <PropertyGroup>
+    <LangVersion>13.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <!-- Качество кода: встроенные анализаторы .NET и правила стиля из .editorconfig проверяются при сборке. -->
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+
+    <!-- Начиная с .NET SDK 10 правило IDE0005 (лишние using) проверяется при сборке только вместе с XML-документацией.
+         Без этого Rider, который собирает через SDK 10, останавливает сборку ошибкой EnableGenerateDocumentationFile.
+         CS1591 отключено: XML-комментарии пишутся там, где поясняют неочевидное, а не у каждого публичного члена. -->
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591</NoWarn>
+
+    <!-- Если среды выполнения .NET 9 нет (например, Rider использует dotnet только с .NET 10),
+         приложение и тесты запускаются на ближайшей более новой версии, а не завершаются с ошибкой. -->
+    <RollForward>Major</RollForward>
+
+    <NeutralLanguage>ru-RU</NeutralLanguage>
+    <Product>Администратор гостиницы</Product>
+  </PropertyGroup>
+</Project>
